@@ -28,11 +28,11 @@ variable "kubernetes_version" {
 variable "node_instance_type" {
   description = "EC2 instance type for EKS worker nodes"
   type        = string
-  default     = "t3.large"
+  default     = "t3.medium"
 }
 
 variable "desired_node_count" {
   description = "Desired number of worker nodes"
   type        = number
-  default     = 3
+  default     = 1
 }
