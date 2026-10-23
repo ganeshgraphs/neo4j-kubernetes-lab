@@ -16,3 +16,23 @@ variable "cluster_name" {
   type        = string
   default     = "neo4j-eks-lab"
 }
+
+
+
+variable "kubernetes_version" {
+  description = "Kubernetes version for EKS"
+  type        = string
+  default     = "1.34"
+}
+
+variable "node_instance_type" {
+  description = "EC2 instance type for EKS worker nodes"
+  type        = string
+  default     = "t3.large"
+}
+
+variable "desired_node_count" {
+  description = "Desired number of worker nodes"
+  type        = number
+  default     = 3
+}
