@@ -34,5 +34,5 @@ variable "node_instance_type" {
 variable "desired_node_count" {
   description = "Desired number of worker nodes"
   type        = number
-  default     = 1
+  default     = 3
 }
