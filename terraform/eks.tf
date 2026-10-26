@@ -17,7 +17,7 @@ resource "aws_eks_cluster" "lab" {
 
     endpoint_private_access = true
     endpoint_public_access  = true
-    public_access_cidrs     = ["18.204.23.198/32"]
+    public_access_cidrs = ["54.163.51.255/32"]
   }
 
   tags = {
