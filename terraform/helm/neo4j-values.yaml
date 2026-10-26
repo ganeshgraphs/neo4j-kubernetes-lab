@@ -1,0 +1,15 @@
+# Neo4j Enterprise - EKS learning lab
+neo4j:
+  name: my-neo4j
+  edition: enterprise
+  acceptLicenseAgreement: "eval"
+  password: ""
+  resources:
+    cpu: "500m"
+    memory: "2Gi"
+
+volumes:
+  data:
+    mode: dynamic
+    dynamic:
+      storageClassName: neo4j-gp3
