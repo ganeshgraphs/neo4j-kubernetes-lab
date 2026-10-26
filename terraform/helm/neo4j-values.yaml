@@ -13,3 +13,7 @@ volumes:
     mode: dynamic
     dynamic:
       storageClassName: neo4j-gp3
+      accessModes:
+        - ReadWriteOnce
+      requests:
+        storage: 5Gi
